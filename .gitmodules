@@ -1,7 +1,7 @@
 [submodule "modules/PX4-Autopilot"]
 	path = modules/PX4-Autopilot
 	url = git@github.com:NootNook/PX4-Autopilot.git
-    branch = sky-eye
+	branch = sky-eye
 
 [submodule "modules/px4_ros_com_ros2/src/px4_ros_com"]
 	path = modules/px4_ros_com_ros2/src/px4_ros_com
