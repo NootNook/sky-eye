@@ -1,11 +1,11 @@
 [submodule "modules/PX4-Autopilot"]
 	path = modules/PX4-Autopilot
-	url = git@github.com:NootNook/PX4-Autopilot.git
+	url = git@github.com:RETINA-UAV/PX4-Autopilot.git
 	branch = sky-eye
 
 [submodule "modules/px4_ros_com_ros2/src/px4_ros_com"]
 	path = modules/px4_ros_com_ros2/src/px4_ros_com
-	url = git@github.com:NootNook/px4_ros_com.git
+	url = git@github.com:RETINA-UAV/px4_ros_com.git
 [submodule "modules/px4_ros_com_ros2/src/px4_msgs"]
 	path = modules/px4_ros_com_ros2/src/px4_msgs
 	url = https://github.com/PX4/px4_msgs.git
