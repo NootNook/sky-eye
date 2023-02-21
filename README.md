@@ -1,4 +1,9 @@
 # RETINA-UAV 
+
+## How to install
+
+See [INSTALL.md](INSTALL.md).
+
 ## Real-time Enhanced Target Identification and Navigation Assistance
 
 # Setup the Unity-ROS2 bridge
