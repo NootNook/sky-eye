@@ -76,3 +76,13 @@ WorldUnity/Logs/
 WorldUnity/UserSettings/
 
 WorldUnity/Temp/
+
+# ---------------
+
+modules/microros_ws/build
+modules/microros_ws/install
+modules/microros_ws/log
+
+modules/px4_ros_com_ros2/build
+modules/px4_ros_com_ros2/install
+modules/px4_ros_com_ros2/log
