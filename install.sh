@@ -1,0 +1,1 @@
+./modules/PX4-Autopilot/Tools/setup/ubuntu.sh --no-nuttx
