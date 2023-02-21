@@ -68,3 +68,11 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 WorldUnity/.vscode/
+
+WorldUnity/Library/
+
+WorldUnity/Logs/
+
+WorldUnity/UserSettings/
+
+WorldUnity/Temp/
