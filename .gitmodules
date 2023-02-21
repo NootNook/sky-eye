@@ -11,6 +11,6 @@
 	url = https://github.com/PX4/px4_msgs.git
 
 [submodule "modules/microros_ws/src/micro_ros_setup"]
-	path = modules/microros_ws/src
+	path = modules/microros_ws/src/micro_ros_setup
 	url = https://github.com/micro-ROS/micro_ros_setup.git
 	branch = foxy
