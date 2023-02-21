@@ -1,12 +1,22 @@
 # RETINA-UAV 
 
+Real-time Enhanced Target Identification and Navigation Assistance
+
 ## How to install
 
 See [INSTALL.md](INSTALL.md).
 
-## Real-time Enhanced Target Identification and Navigation Assistance
+## Quick start
 
-# Setup the Unity-ROS2 bridge
+```bash
+./scripts/run_simulator.sh
+```
+
+```bash
+./scripts/run_bridge_px4_ros2.sh
+```
+
+## Setup the Unity-ROS2 bridge
 
 You can find the Unity-ROS2 bridge used is just [here](https://github.com/RobotecAI/ros2-for-unity) from the RobotecAI repository.
 

@@ -9,17 +9,19 @@ https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
 ## EASY WAY
 
 ```bash
-./install.sh
+./scripts/install.sh
 ```
 
-## PX4 ROS Com and PX4 msg
+## INSTALLATION DETAIL
+
+### PX4 ROS Com and PX4 msg
 
 ```bash
 cd modules/px4_ros_com_ros2
 colcon build
 ```
 
-## Micro-ROS
+### Micro-ROS-Agent
 
 ```bash
 cd modules/microros_ws
