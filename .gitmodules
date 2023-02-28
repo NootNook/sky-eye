@@ -7,10 +7,6 @@
 	path = modules/px4_ros_com_ros2/src/px4_ros_com
 	url = git@github.com:RETINA-UAV/px4_ros_com.git
 
-[submodule "modules/retina_pkg"]
-	path = modules/retina_pkg
-	url = git@github.com:RETINA-UAV/retina_pkg.git
-
 [submodule "modules/px4_ros_com_ros2/src/px4_msgs"]
 	path = modules/px4_ros_com_ros2/src/px4_msgs
 	url = https://github.com/PX4/px4_msgs.git
