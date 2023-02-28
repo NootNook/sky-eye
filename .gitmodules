@@ -15,6 +15,6 @@
 	url = https://github.com/micro-ROS/micro_ros_setup.git
 	branch = foxy
 
-[submodule "modules/"]
+[submodule "modules/retina_pkg"]
 	path = modules/retina_pkg
-	url = https://github.com/RETINA-UAV/retina_pkg
+	url = https://github.com/RETINA-UAV/retina_pkg.git
