@@ -14,3 +14,7 @@
 	path = modules/microros_ws/src/micro_ros_setup
 	url = https://github.com/micro-ROS/micro_ros_setup.git
 	branch = foxy
+
+[submodule "modules/"]
+	path = modules/retina_pkg
+	url = https://github.com/RETINA-UAV/retina_pkg
