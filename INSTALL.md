@@ -6,6 +6,11 @@ Testing of Ubuntu 20.04 and ROS 2 Foxy
 
 https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
 
+
+```bash
+sudo apt install ros-foxy-gazebo-ros-pkgs ros-foxy-velodyne-simulator
+```
+
 ## EASY WAY
 
 ```bash
