@@ -11,5 +11,8 @@ else
   source "$(pwd)"/modules/microros_ws/install/local_setup.bash
 fi
 
-ros2 run micro_ros_setup create_agent_ws.sh
+(
+cd modules/microros_ws && \
+ros2 run micro_ros_setup create_agent_ws.sh && \
 ros2 run micro_ros_setup build_agent.sh
+)
