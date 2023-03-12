@@ -20,7 +20,7 @@ public class SubPointCloud : MonoBehaviour
         {
             ros2Node = ros2Unity.CreateNode("SubPointCloud");
             chatter_sub = ros2Node.CreateSubscription<sensor_msgs.msg.PointCloud2>("/ray/pointcloud2", 
-                msg => Debug.Log("On a le nuage de point mon reuf enfin :)"));
+                msg => Debug.Log(msg.Header.Stamp.Sec));
         }
     }
 }

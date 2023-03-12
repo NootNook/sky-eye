@@ -86,3 +86,4 @@ modules/microros_ws/log
 modules/px4_ros_com_ros2/build
 modules/px4_ros_com_ros2/install
 modules/px4_ros_com_ros2/log
+WorldUnity/obj/
