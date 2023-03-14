@@ -87,3 +87,9 @@ modules/px4_ros_com_ros2/build
 modules/px4_ros_com_ros2/install
 modules/px4_ros_com_ros2/log
 WorldUnity/obj/
+
+# ---------------------------
+
+ros2/build
+ros2/install
+ros2/log
