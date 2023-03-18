@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'image_subscriber = retina_pkg.image_subscriber:main'
+            'image_subscriber = retina_pkg.image_subscriber:main',
+            'uav_location_subscriber = retina_pkg.uav_location_subscriber:main'
         ],
     },
 )
