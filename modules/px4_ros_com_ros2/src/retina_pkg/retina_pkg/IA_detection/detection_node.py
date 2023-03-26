@@ -15,7 +15,7 @@ index = 0
 is_launch = True
 
 def SignalHandler_SIGINT(SignalNumber,Frame):
-  print('Exit pressed !')
+  print('Exiting !')
   print('Saving the video of the session ...')
   
   #Break the infinit loop
@@ -48,7 +48,6 @@ def SignalHandler_SIGINT(SignalNumber,Frame):
   out = cv2.VideoWriter('Dump_IA_detection_vid/IA-detections_vid%d.avi' % nb_vid,cv2.VideoWriter_fourcc(*'DIVX'), 15,(width,height))
   for j in range(len(img_array)):
     out.write(img_array[j])
-    print(j)
   out.release()
 
   #Delete all images in Frames/
