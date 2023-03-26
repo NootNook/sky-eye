@@ -93,3 +93,4 @@ WorldUnity/obj/
 ros2/build
 ros2/install
 ros2/log
+modules/px4_ros_com_ros2/src/retina_pkg/retina_pkg/IA_detection/Dump_IA_detection_vid/
