@@ -22,7 +22,7 @@ You can find the Unity-ROS2 bridge used is just [here](https://github.com/Robote
 
 We've used the released version [1.1.0](https://github.com/RobotecAI/ros2-for-unity/releases/tag/1.1.0)
 
-To make it all work you need to open a terminal, source your ros '.bash' file and lauch the unity project from it unless it will not work.
+To make it all work you need to open a terminal, source your ros '.bash' file and lauch the unity project from the terminal.
 
 ```shell
 source /opt/ros/foxy/setup.bash
