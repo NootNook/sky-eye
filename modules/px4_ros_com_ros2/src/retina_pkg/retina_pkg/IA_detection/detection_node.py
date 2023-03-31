@@ -38,6 +38,10 @@ def SignalHandler_SIGINT(SignalNumber,Frame):
 
   height,width,layers = img_array[1].shape
 
+  #Create folder if not already exist
+  if not os.path.exists("Dump_IA_detection_vid/"):
+     os.makedirs("Dump_IA_detection_vid/")
+
   #Get number of video already saved
   nb_vid = 0
   for path in os.listdir("Dump_IA_detection_vid/"):
@@ -83,38 +87,59 @@ class ImageSubscriber(Node):
     self.subscription = self.create_subscription(Image, '/camera/image_raw', self.listener_callback, 10)       
     self.br = CvBridge()
    
-
+  #Callback function where we intercept the frame from the camera
   def listener_callback(self, data):
     global index
     index = 0
+
+    #Create folder if not already exist
+    if not os.path.exists("Frames/"):
+      os.makedirs("Frames/")
+
     for path in os.listdir("Frames/"):
       if os.path.isfile(os.path.join("Frames/", path)):
         index += 1
     self.get_logger().info('Receiving video frame%d' % index)
+
+    #Convert image from ROS msg to openCV type
     current_frame = self.br.imgmsg_to_cv2(data)
+
+    #Save current frame
     cv2.imwrite("Frames/Frame%d.png" % index, current_frame)
 
 def main(args=None):
+  #Init the node
   rclpy.init(args=args)
   image_subscriber = ImageSubscriber()
+
+  #Init the signal handler for SIGINT (quit signal)
   signal.signal(signal.SIGINT,SignalHandler_SIGINT)
+  
   while(is_launch):
+    #Get the image from camera at the moment
     rclpy.spin_once(image_subscriber)
 
+    #Create and set our detector object
     detector = ObjectDetection()  
     detector.setModelTypeAsYOLOv3()
     detector.setModelPath( os.path.join(execution_path , "yolov3.pt"))
     detector.loadModel()
 
+    #Create folder if not already exist
+    if not os.path.exists("FramesAnalysed/"):
+      os.makedirs("FramesAnalysed/")
+
+    #Detect object on the framer number 'index'
     if os.path.isfile("Frames/Frame%d.png" % index):
       detections = detector.detectObjectsFromImage(input_image="Frames/Frame%d.png" % index,
                                                    output_image_path=os.path.join(execution_path, "FramesAnalysed/frameAnalysed%d.png" % index),
                                                    minimum_percentage_probability=30)
+    #Print all detections made on the frame
     for eachObject in detections:
       print(eachObject["name"] , " : ", eachObject["percentage_probability"], " : ", eachObject["box_points"] )
       print("--------------------------------")
 
-
+    #Show the current frame
     if os.path.isfile("FramesAnalysed/frameAnalysed%d.png" % index):
       img_analysed = cv2.imread("FramesAnalysed/frameAnalysed%d.png" % index)
       cv2.imshow("IA_Detection", img_analysed)
@@ -124,6 +149,7 @@ def main(args=None):
       cv2.imshow("IA_Detection", img)
       cv2.waitKey(1)
 
+  #If out the while true then destroy and shutdown all
   cv2.destroyAllWindows()
   image_subscriber.destroy_node()
   rclpy.shutdown()
