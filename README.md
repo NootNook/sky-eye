@@ -22,6 +22,10 @@ See [FEATURES.md](FEATURES.md)
 ./scripts/run_bridge_px4_ros2.sh
 ```
 
+```bash
+./scripts/run_ia_detection.sh
+```
+
 ### Setup the Unity-ROS2 bridge
 
 You can find the Unity-ROS2 bridge used is just [here](https://github.com/RobotecAI/ros2-for-unity) from the RobotecAI repository.
