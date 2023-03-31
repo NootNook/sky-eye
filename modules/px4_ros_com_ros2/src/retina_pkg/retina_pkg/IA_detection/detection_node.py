@@ -54,7 +54,7 @@ def SignalHandler_SIGINT(SignalNumber,Frame):
     out.write(img_array[j])
   out.release()
 
-  #Delete all images in Frames/
+  #Delete all images and the folder Frames/
   frame_folder_path = 'Frames/'
   for filename in os.listdir(frame_folder_path):
     file_path = os.path.join(frame_folder_path, filename)
@@ -65,8 +65,9 @@ def SignalHandler_SIGINT(SignalNumber,Frame):
             shutil.rmtree(file_path)
     except Exception as e:
         print('Failed to delete %s. Reason: %s' % (file_path, e))
+  os.remove(frame_folder_path)
 
-  #Delete all images in FramesAnalysed/
+  #Delete all images and the folder FramesAnalysed/
   frame_folder_path = 'FramesAnalysed/'
   for filename in os.listdir(frame_folder_path):
     file_path = os.path.join(frame_folder_path, filename)
@@ -77,6 +78,7 @@ def SignalHandler_SIGINT(SignalNumber,Frame):
             shutil.rmtree(file_path)
     except Exception as e:
         print('Failed to delete %s. Reason: %s' % (file_path, e))
+  os.remove(frame_folder_path)
   print("Done !")
 
 
