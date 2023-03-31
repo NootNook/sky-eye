@@ -43,3 +43,6 @@ Our project, called RETINA - UAV, is an acronym for "Real-time Enhanced Target I
 To better understand the project's functioning, here are the steps:
 Firstly, the operator selects the GPS area where they want to send the drone from a ground control station.
 Secondly, the drone heads towards the selected area and performs surveillance by detecting everything it can. During its mission, it uses its LiDAR sensor to reconstruct the environment in a 3D simulation. Then, the drone combines the 3D reconstruction data with the detections made to place them in the created virtual world. Thanks to this, a map of the area can be viewed by operators. The user of the augmented reality glasses can also visualize all the detections made through them, even through walls and different obstacles. With all this information, rescuers can be more effective in their operations.
+
+![vuedensemble](https://user-images.githubusercontent.com/67638224/229091129-bc7cf787-7bd7-434d-a9a2-0387f956fbc0.png)
+
