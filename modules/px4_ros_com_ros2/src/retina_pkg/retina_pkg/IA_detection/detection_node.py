@@ -45,7 +45,7 @@ def SignalHandler_SIGINT(SignalNumber,Frame):
       nb_vid += 1
 
   print('Assembling the video ...')
-  out = cv2.VideoWriter('Dump_IA_detection_vid/IA-detections_vid%d.avi' % nb_vid,cv2.VideoWriter_fourcc(*'DIVX'), 15,(width,height))
+  out = cv2.VideoWriter('Dump_IA_detection_vid/IA-detections_vid%d.avi' % nb_vid,cv2.VideoWriter_fourcc(*'DIVX'), 3,(width,height))
   for j in range(len(img_array)):
     out.write(img_array[j])
   out.release()

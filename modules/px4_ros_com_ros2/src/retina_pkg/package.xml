@@ -3,9 +3,10 @@
 <package format="3">
   <name>retina_pkg</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>This package is a set of scripts that make up the operation of the RETINA - UAV
+  For now this pakage only have the scripts that permit the IA deteaction of the UAV</description>
   <maintainer email="67638224+NootNook@users.noreply.github.com">romain</maintainer>
-  <license>TODO: License declaration</license>
+  <license>BSD</license>
 
   <depend>rclpy</depend>
   <depend>image_transport</depend>
