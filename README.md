@@ -10,7 +10,9 @@ See [INSTALL.md](INSTALL.md).
 
 See [FEATURES.md](FEATURES.md)
 
-## Quick start
+## Launching a project
+
+### Quick start
 
 ```bash
 ./scripts/run_simulator.sh
@@ -20,7 +22,7 @@ See [FEATURES.md](FEATURES.md)
 ./scripts/run_bridge_px4_ros2.sh
 ```
 
-## Setup the Unity-ROS2 bridge
+### Setup the Unity-ROS2 bridge
 
 You can find the Unity-ROS2 bridge used is just [here](https://github.com/RobotecAI/ros2-for-unity) from the RobotecAI repository.
 
