@@ -6,6 +6,10 @@ Real-time Enhanced Target Identification and Navigation Assistance
 
 See [INSTALL.md](INSTALL.md).
 
+## Our changes to various GitHub repositories
+
+See [FEATURES.md](FEATURES.md)
+
 ## Quick start
 
 ```bash
